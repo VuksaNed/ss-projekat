@@ -1,0 +1,21 @@
+Sve sekcije
+jedan  D
+druga  B
+.equ  4
+
+Tabela simbola:
+jedan	jedan	0	local	0
+druga	druga	0	local	1
+osmica	.equ	0	local	2
+labela	und	-1	global	3
+
+Masinski kod:
+jedan
+000000000070128303105F7351
+druga
+0000B06012B03F04000800
+.equ
+0008
+
+Relokacioni zapis:
+druga	0	R_data_16	3	0	

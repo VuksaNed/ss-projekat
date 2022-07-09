@@ -1,0 +1,20 @@
+Sve sekcije
+sekcijaa  1A
+.equ  4
+
+Tabela simbola:
+co	.equ	0	local	0
+sekcijaa	sekcijaa	0	local	1
+labela	sekcijaa	14	local	2
+poc	und	-1	global	3
+
+Masinski kod:
+.equ
+0033
+sekcijaa
+0000A01F040000A02F04003370127132741352FF00000E824000
+
+Relokacioni zapis:
+sekcijaa	0	R_data_16	3	0	
+sekcijaa	5	R_instruction_16	3	0	
+sekcijaa	21	R_instruction_16	1	0	

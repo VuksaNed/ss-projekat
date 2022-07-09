@@ -1,0 +1,24 @@
+Sve sekcije
+myCode  1C
+myData  2
+.equ  4
+
+Tabela simbola:
+myCode	myCode	0	local	0
+tim_cfg	.equ	0	local	1
+myStart	myCode	0	global	2
+wait	myCode	10	local	3
+myData	myData	0	local	4
+myCounter	myData	0	global	5
+
+Masinski kod:
+myCode
+A00F000001B00F04FF10A00F040000A01F000005740152FF00000A00
+.equ
+FF10
+myData
+0000
+
+Relokacioni zapis:
+myCode	13	R_instruction_16	5	0	
+myCode	25	R_instruction_16	0	0	

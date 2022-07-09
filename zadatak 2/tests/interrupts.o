@@ -1,0 +1,32 @@
+Sve sekcije
+ivt  10
+isr  3E
+.equ  C
+
+Tabela simbola:
+ivt	ivt	0	local	0
+myStart	und	-1	global	1
+myCounter	und	-1	global	2
+isr	isr	0	local	3
+term_out	.equ	0	local	4
+term_in	.equ	4	local	5
+asciiCode	.equ	8	local	6
+isr_reset	isr	0	local	7
+isr_timer	isr	5	local	8
+isr_terminal	isr	22	local	9
+
+Masinski kod:
+ivt
+00000000050016000000000000000000
+isr
+50FF000000B06012A00F000054B00F04FF00A0064220B06012B06112A00F04FF02B00F04FF00A007050000A01F0000017001B00F040000A01642A0064220
+.equ
+FF00FF020054
+
+Relokacioni zapis:
+ivt	0	R_data_16	3	0	
+ivt	4	R_data_16	3	0	
+ivt	6	R_data_16	3	0	
+isr	3	R_instruction_16	1	0	
+isr	41	R_instruction_PC16	2	-2	
+isr	53	R_instruction_16	2	0	

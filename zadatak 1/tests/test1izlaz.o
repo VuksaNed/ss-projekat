@@ -1,0 +1,19 @@
+Sve sekcije
+prva  4
+.equ  8
+
+Tabela simbola:
+b	und	-1	global	0
+prva	prva	0	local	1
+d	.equ	0	local	2
+e	.equ	4	local	3
+a	prva	4	global	4
+
+Masinski kod:
+prva
+00000000
+.equ
+00050FA3
+
+Relokacioni zapis:
+prva	2	R_data_16	4	0	
